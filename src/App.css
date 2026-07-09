@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Header ul li {
+    @apply px-10
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-primary{
+    background: rgb(85, 80, 227);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li{
+    @apply hover:text-red-400 hover:cursor-pointer hover:scale-125 transition-all duration-300  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+dark\:underline:where([data-mode="dark"], [data-mode="dark"] *){
+  text-decoration-line: underline
 }
 
-.App-link {
-  color: #61dafb;
+.moblie_nav{
+    @apply flex top-20 left-0  bg-gray-700 w-full h-36 rounded-b-lg
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.moblie_nav ul li{
+    @apply w-full text-center p-2 hover:shadow-xl
+}
+
+html{
+    @apply bg-gray-300 scroll-smooth
+}
+.textinputcss{
+    @apply p-4 xl:w-96   rounded-2xl  backdrop-blur-md bg-white/50 min-[320px]:w-52
+}
+
+.selectiontextinputcss{
+    @apply border border-white flex flex-col p-3 rounded-md
+}
+
+.moviment{
+    @apply transition-transform hover:scale-110 duration-300 hover:shadow-[5px_5px_20px_rgba(6,182,212,0.5),_-5px_-5px_20px_rgba(217,70,239,0.5)]
+}
+
+.contactme{
+    @apply h-44 w-60 mt-16 mx-10  border flex justify-center items-center flex-col  backdrop-blur-xl bg-white/30 rounded-2xl
 }
