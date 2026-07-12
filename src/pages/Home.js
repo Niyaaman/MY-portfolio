@@ -11,7 +11,7 @@ export default function Home() {
       
       <p className='text-6xl font-sons p-5 text-center'>Hi I am <span className='text-red-400  upp  '>Niyaaman</span></p> 
       
-      <h1 className='flex min-[200px]:flex-col sm:flex-col md:flex-col lg:flex-row'> <span> UI & UX Designer |  </span> <span>frontend developer |</span>  <span> engineer </span></h1>
+      <h1 className='flex min-[200px]:flex-col sm:flex-col md:flex-col lg:flex-row'> <span> UI & UX Designer |  </span> <span>frontend developer |</span>  <span> Software Engineer </span></h1>
       <div className='flex space-x-7 pt-11 h-40 w-100  min-[200px]:flex-col sm:flex-col lg:flex-row justify-center items-center '> 
         <div className='w-60 h-20 border-solid rounded-full border-2 border-bg-primary  hover:bg- text-2xl flex justify-center items-center hadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer md: m-4  min-[200px]: ml-10 '> About me </div>
         <div className=' hover:bg-[#25D366] w-60 h-20 border-solid rounded-full border-2 border-bg-primary text-2xl flex justify-center items-center shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer  '> 
